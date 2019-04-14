@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HomeAutomationAndroidClient</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_web_control">WebControlActivity</string>
+
+    <string-array name="planets_array">
+        <item>Device 1</item>
+        <item>Device 2</item>
+        <item>Device 3</item>
+        <item>Device 4</item>
+        <item>Device 5</item>
+        <item>Device 6</item>
+        <item>Device 7</item>
+        <item>Device 8</item>
+    </string-array>
+
+    <string name="title_activity_device_control">DeviceControlActivity</string>
+
+</resources>

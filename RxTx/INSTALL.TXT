@@ -1,0 +1,15 @@
+you will find the "java" directory in "Program Files" folder.
+After finding the "java" directory copy the following files to respective directories.
+
+Copy RxTxComm.jar in 
+
+java\jdk\lib
+java\jre\lib
+java\jdk\jre\lib
+
+Copy rxtxSerial.dll as well as rxTxParallel.dll in
+
+java\jdk\bin
+java\jre\bin
+java\jdk\jre\bin
+

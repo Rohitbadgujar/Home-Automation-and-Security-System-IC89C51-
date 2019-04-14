@@ -1,0 +1,70 @@
+drop database 9527DB;
+create database 9527DB;
+use 9527DB;
+
+create table deviceDetails(
+iD int auto_increment primary key,
+userId varchar(15),
+s1 int,
+s2 int,
+s3 int,
+s4 int,
+s5 int,
+s6 int,
+s7 int,
+s8 int,
+th1 int,
+th2 int,
+th3 int,
+th4 int,
+th5 int,
+th6 int,
+th7 int,
+th8 int,
+devstatus int,
+fbAllowed varchar(10),
+ControlAllowed varchar(10),
+auto1 varchar(7),
+auto2 varchar(7),
+auto3 varchar(7),
+auto4 varchar(7),
+auto5 varchar(7),
+auto6 varchar(7),
+auto7 varchar(7),
+auto8 varchar(7)
+);
+
+create table imagedetails(
+userID varchar(20) primary key,
+ww int,
+hh int,
+image longBlob,
+state int
+);
+
+create table user(
+uid varchar(15) primary key,
+fName varchar(50),
+mName varchar(50),
+lName varchar(50),
+gender varchar(50),
+mobile varchar(15),
+email varchar(20),
+Address varchar(200),
+password varchar(50)
+);
+
+
+create table clientCommand(
+iD int auto_increment primary key,
+userId varchar(15),
+th1 int,
+th2 int,
+th3 int,
+th4 int,
+th5 int,
+th6 int,
+th7 int,
+th8 int,
+devstatus int
+);

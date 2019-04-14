@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1.1-b09 (branches/2.1-6834; 2011-07-16T17:14:48+0000) JAXWS-RI/2.2.5-promoted-b04 JAXWS/2.2. --><xs:schema xmlns:tns="http://MyServerPack/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://MyServerPack/">
+
+<xs:element name="AuthenticateAndroidUser" type="tns:AuthenticateAndroidUser"/>
+
+<xs:element name="AuthenticateAndroidUserResponse" type="tns:AuthenticateAndroidUserResponse"/>
+
+<xs:element name="AuthenticateUser1" type="tns:AuthenticateUser1"/>
+
+<xs:element name="AuthenticateUser1Response" type="tns:AuthenticateUser1Response"/>
+
+<xs:element name="PassObjectRefrence" type="tns:PassObjectRefrence"/>
+
+<xs:element name="SearchUserPresent" type="tns:SearchUserPresent"/>
+
+<xs:element name="SearchUserPresentResponse" type="tns:SearchUserPresentResponse"/>
+
+<xs:element name="StoreData" type="tns:StoreData"/>
+
+<xs:element name="StoreDataResponse" type="tns:StoreDataResponse"/>
+
+<xs:element name="addClientCommands" type="tns:addClientCommands"/>
+
+<xs:element name="addClientCommandsResponse" type="tns:addClientCommandsResponse"/>
+
+<xs:element name="fetchdataAndroid" type="tns:fetchdataAndroid"/>
+
+<xs:element name="fetchdataAndroidResponse" type="tns:fetchdataAndroidResponse"/>
+
+<xs:element name="getClientCmdJava" type="tns:getClientCmdJava"/>
+
+<xs:element name="getClientCmdJavaResponse" type="tns:getClientCmdJavaResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="initDatabse" type="tns:initDatabse"/>
+
+<xs:element name="initDatabseResponse" type="tns:initDatabseResponse"/>
+
+<xs:element name="pass" type="tns:pass"/>
+
+<xs:element name="passResponse" type="tns:passResponse"/>
+
+<xs:element name="passobjref" type="tns:passobjref"/>
+
+<xs:element name="passrefofMyImage" type="tns:passrefofMyImage"/>
+
+<xs:element name="passrefofMyImageResponse" type="tns:passrefofMyImageResponse"/>
+
+<xs:element name="updataJavaData" type="tns:updataJavaData"/>
+
+<xs:element name="videoStreamForAndroid" type="tns:videoStreamForAndroid"/>
+
+<xs:element name="videoStreamForAndroidResponse" type="tns:videoStreamForAndroidResponse"/>
+
+<xs:complexType name="passrefofMyImage">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="passrefofMyImageResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:myImage" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="myImage">
+<xs:sequence>
+<xs:element name="img" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="ww" type="xs:int"/>
+<xs:element name="hh" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AuthenticateUser1">
+<xs:sequence>
+<xs:element name="fromclient" type="tns:homeAutomationUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="homeAutomationUser">
+<xs:sequence>
+<xs:element name="Fname" type="xs:string" minOccurs="0"/>
+<xs:element name="Mname" type="xs:string" minOccurs="0"/>
+<xs:element name="Lname" type="xs:string" minOccurs="0"/>
+<xs:element name="Address" type="xs:string" minOccurs="0"/>
+<xs:element name="EmailId" type="xs:string" minOccurs="0"/>
+<xs:element name="Gender" type="xs:string" minOccurs="0"/>
+<xs:element name="mbNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="UserName" type="xs:string" minOccurs="0"/>
+<xs:element name="Password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AuthenticateUser1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:homeAutomationUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fetchdataAndroid">
+<xs:sequence>
+<xs:element name="uid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fetchdataAndroidResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="passobjref">
+<xs:sequence>
+<xs:element name="parameter1" type="tns:homeAutomationUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updataJavaData">
+<xs:sequence>
+<xs:element name="deviceData" type="tns:deviceDetails" minOccurs="0"/>
+<xs:element name="imageArray" type="xs:base64Binary" nillable="true" minOccurs="0"/>
+<xs:element name="state" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deviceDetails">
+<xs:sequence>
+<xs:element name="sensor" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="th" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="deviceStatus" type="xs:int"/>
+<xs:element name="feedback" type="xs:string" minOccurs="0"/>
+<xs:element name="allControl" type="xs:string" minOccurs="0"/>
+<xs:element name="userId" type="xs:string" minOccurs="0"/>
+<xs:element name="auto" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addClientCommands">
+<xs:sequence>
+<xs:element name="clientCommands" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addClientCommandsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="videoStreamForAndroid">
+<xs:sequence>
+<xs:element name="uid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="videoStreamForAndroidResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="StoreData">
+<xs:sequence>
+<xs:element name="fromClient" type="tns:homeAutomationUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="StoreDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AuthenticateAndroidUser">
+<xs:sequence>
+<xs:element name="fromClient" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AuthenticateAndroidUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getClientCmdJava">
+<xs:sequence>
+<xs:element name="uid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getClientCmdJavaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:deviceDetails" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pass">
+<xs:sequence>
+<xs:element name="parameter" type="tns:deviceDetails" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="passResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchUserPresent">
+<xs:sequence>
+<xs:element name="fromClient" type="tns:homeAutomationUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SearchUserPresentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="initDatabse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="initDatabseResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="PassObjectRefrence">
+<xs:sequence>
+<xs:element name="obj" type="tns:homeAutomationUser" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,271 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x3d454c49, pid=5324, tid=2140
+#
+# JRE version: 6.0_16-b01
+# Java VM: Java HotSpot(TM) Client VM (14.2-b01 mixed mode windows-x86 )
+# Problematic frame:
+# C  0x3d454c49
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0c9ba400):  JavaThread "AWT-EventQueue-0" [_thread_in_native, id=2140, stack(0x0cf10000,0x0cf60000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x3d454c49
+
+Registers:
+EAX=0x3d454c49, EBX=0x092793b0, ECX=0x11842c88, EDX=0x118409f0
+ESP=0x0cf5f1ac, EBP=0x0cf5f1c8, ESI=0x11792c88, EDI=0x0c9ba400
+EIP=0x3d454c49, EFLAGS=0x00010202
+
+Top of Stack: (sp=0x0cf5f1ac)
+0x0cf5f1ac:   10b31878 6d998fd5 0c9ba400 00000006
+0x0cf5f1bc:   00000008 0c9ba400 092793b0 0cf5f214
+0x0cf5f1cc:   0fe21ae8 092793b0 0fe2186c 092793b0
+0x0cf5f1dc:   02489e37 0c9ba510 0cf5f224 0244fe1c
+0x0cf5f1ec:   0244fe2c 00000013 0cf5f1f4 092793b0
+0x0cf5f1fc:   0cf5f224 0927bfb0 00000000 092793b0
+0x0cf5f20c:   00000000 0cf5f224 0cf5f248 02482da1
+0x0cf5f21c:   00000000 02488269 04500860 0cf5f228 
+
+Instructions: (pc=0x3d454c49)
+0x3d454c39:   
+[error occurred during error reporting (printing registers, top of stack, instructions near pc), id 0xc0000005]
+
+Stack: [0x0cf10000,0x0cf60000],  sp=0x0cf5f1ac,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  0x3d454c49
+C  [JMyron.dll+0x1ae8]
+j  JMyron.JMyron.stop()V+1
+j  MyClientPack.DeviceControlFrm.initWebCam()V+168
+j  MyClientPack.DeviceControlFrm.<init>(LMyClientPack/MainMenu;)V+178
+j  MyClientPack.MainMenu.btnControlDeviceActionPerformed(Ljava/awt/event/ActionEvent;)V+10
+j  MyClientPack.MainMenu.access$200(LMyClientPack/MainMenu;Ljava/awt/event/ActionEvent;)V+2
+j  MyClientPack.MainMenu$3.actionPerformed(Ljava/awt/event/ActionEvent;)V+5
+j  javax.swing.AbstractButton.fireActionPerformed(Ljava/awt/event/ActionEvent;)V+84
+j  javax.swing.AbstractButton$Handler.actionPerformed(Ljava/awt/event/ActionEvent;)V+5
+j  javax.swing.DefaultButtonModel.fireActionPerformed(Ljava/awt/event/ActionEvent;)V+35
+j  javax.swing.DefaultButtonModel.setPressed(Z)V+117
+j  javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Ljava/awt/event/MouseEvent;)V+35
+j  java.awt.Component.processMouseEvent(Ljava/awt/event/MouseEvent;)V+64
+j  javax.swing.JComponent.processMouseEvent(Ljava/awt/event/MouseEvent;)V+23
+j  java.awt.Component.processEvent(Ljava/awt/AWTEvent;)V+81
+j  java.awt.Container.processEvent(Ljava/awt/AWTEvent;)V+18
+j  java.awt.Component.dispatchEventImpl(Ljava/awt/AWTEvent;)V+562
+J  java.awt.Container.dispatchEventImpl(Ljava/awt/AWTEvent;)V
+J  java.awt.LightweightDispatcher.retargetMouseEvent(Ljava/awt/Component;ILjava/awt/event/MouseEvent;)V
+j  java.awt.LightweightDispatcher.processMouseEvent(Ljava/awt/event/MouseEvent;)Z+139
+j  java.awt.LightweightDispatcher.dispatchEvent(Ljava/awt/AWTEvent;)Z+50
+J  java.awt.Container.dispatchEventImpl(Ljava/awt/AWTEvent;)V
+j  java.awt.Window.dispatchEventImpl(Ljava/awt/AWTEvent;)V+19
+J  java.awt.EventQueue.dispatchEvent(Ljava/awt/AWTEvent;)V
+J  java.awt.EventDispatchThread.pumpOneEventForFilters(I)Z
+j  java.awt.EventDispatchThread.pumpEventsForFilter(ILjava/awt/Conditional;Ljava/awt/EventFilter;)V+30
+j  java.awt.EventDispatchThread.pumpEventsForHierarchy(ILjava/awt/Conditional;Ljava/awt/Component;)V+11
+j  java.awt.EventDispatchThread.pumpEvents(ILjava/awt/Conditional;)V+4
+j  java.awt.EventDispatchThread.pumpEvents(Ljava/awt/Conditional;)V+3
+j  java.awt.EventDispatchThread.run()V+9
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0xecf9c]
+V  [jvm.dll+0x1741e1]
+V  [jvm.dll+0xed167]
+V  [jvm.dll+0xed1dd]
+V  [jvm.dll+0x116290]
+V  [jvm.dll+0x1d0424]
+V  [jvm.dll+0x173e5c]
+C  [msvcr71.dll+0x9565]
+C  [kernel32.dll+0x13677]
+C  [ntdll.dll+0x39f02]
+C  [ntdll.dll+0x39ed5]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  JMyron.JMyron.native_stop()V+0
+j  JMyron.JMyron.stop()V+1
+j  MyClientPack.DeviceControlFrm.initWebCam()V+168
+j  MyClientPack.DeviceControlFrm.<init>(LMyClientPack/MainMenu;)V+178
+j  MyClientPack.MainMenu.btnControlDeviceActionPerformed(Ljava/awt/event/ActionEvent;)V+10
+j  MyClientPack.MainMenu.access$200(LMyClientPack/MainMenu;Ljava/awt/event/ActionEvent;)V+2
+j  MyClientPack.MainMenu$3.actionPerformed(Ljava/awt/event/ActionEvent;)V+5
+j  javax.swing.AbstractButton.fireActionPerformed(Ljava/awt/event/ActionEvent;)V+84
+j  javax.swing.AbstractButton$Handler.actionPerformed(Ljava/awt/event/ActionEvent;)V+5
+j  javax.swing.DefaultButtonModel.fireActionPerformed(Ljava/awt/event/ActionEvent;)V+35
+j  javax.swing.DefaultButtonModel.setPressed(Z)V+117
+j  javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Ljava/awt/event/MouseEvent;)V+35
+j  java.awt.Component.processMouseEvent(Ljava/awt/event/MouseEvent;)V+64
+j  javax.swing.JComponent.processMouseEvent(Ljava/awt/event/MouseEvent;)V+23
+j  java.awt.Component.processEvent(Ljava/awt/AWTEvent;)V+81
+j  java.awt.Container.processEvent(Ljava/awt/AWTEvent;)V+18
+j  java.awt.Component.dispatchEventImpl(Ljava/awt/AWTEvent;)V+562
+J  java.awt.Container.dispatchEventImpl(Ljava/awt/AWTEvent;)V
+J  java.awt.LightweightDispatcher.retargetMouseEvent(Ljava/awt/Component;ILjava/awt/event/MouseEvent;)V
+j  java.awt.LightweightDispatcher.processMouseEvent(Ljava/awt/event/MouseEvent;)Z+139
+j  java.awt.LightweightDispatcher.dispatchEvent(Ljava/awt/AWTEvent;)Z+50
+J  java.awt.Container.dispatchEventImpl(Ljava/awt/AWTEvent;)V
+j  java.awt.Window.dispatchEventImpl(Ljava/awt/AWTEvent;)V+19
+J  java.awt.EventQueue.dispatchEvent(Ljava/awt/AWTEvent;)V
+J  java.awt.EventDispatchThread.pumpOneEventForFilters(I)Z
+j  java.awt.EventDispatchThread.pumpEventsForFilter(ILjava/awt/Conditional;Ljava/awt/EventFilter;)V+30
+j  java.awt.EventDispatchThread.pumpEventsForHierarchy(ILjava/awt/Conditional;Ljava/awt/Component;)V+11
+j  java.awt.EventDispatchThread.pumpEvents(ILjava/awt/Conditional;)V+4
+j  java.awt.EventDispatchThread.pumpEvents(Ljava/awt/Conditional;)V+3
+j  java.awt.EventDispatchThread.run()V+9
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0c92e000 JavaThread "Timer-0" [_thread_blocked, id=3524, stack(0x0fd10000,0x0fd60000)]
+  0x0c907c00 JavaThread "Thread-3" [_thread_in_native, id=5744, stack(0x10cb0000,0x10d00000)]
+  0x0f425800 JavaThread "TimerQueue" daemon [_thread_blocked, id=4296, stack(0x10400000,0x10450000)]
+  0x0f424800 JavaThread "D3D Screen Updater" daemon [_thread_blocked, id=3036, stack(0x0fb60000,0x0fbb0000)]
+  0x004d9800 JavaThread "DestroyJavaVM" [_thread_blocked, id=4160, stack(0x00280000,0x002d0000)]
+=>0x0c9ba400 JavaThread "AWT-EventQueue-0" [_thread_in_native, id=2140, stack(0x0cf10000,0x0cf60000)]
+  0x0c9ba000 JavaThread "AWT-Windows" daemon [_thread_in_native, id=6084, stack(0x0ce80000,0x0ced0000)]
+  0x0c9b9800 JavaThread "AWT-Shutdown" [_thread_blocked, id=3444, stack(0x0cd90000,0x0cde0000)]
+  0x0c9b7400 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=644, stack(0x0cb50000,0x0cba0000)]
+  0x02456400 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=4708, stack(0x0c820000,0x0c870000)]
+  0x02455000 JavaThread "CompilerThread0" daemon [_thread_blocked, id=5752, stack(0x0c790000,0x0c7e0000)]
+  0x02454000 JavaThread "Attach Listener" daemon [_thread_blocked, id=5180, stack(0x0c700000,0x0c750000)]
+  0x02449400 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=4264, stack(0x0c670000,0x0c6c0000)]
+  0x0241cc00 JavaThread "Finalizer" daemon [_thread_blocked, id=5200, stack(0x0c5e0000,0x0c630000)]
+  0x02418000 JavaThread "Reference Handler" daemon [_thread_blocked, id=5032, stack(0x0c550000,0x0c5a0000)]
+
+Other Threads:
+  0x02414400 VMThread [stack: 0x0c4c0000,0x0c510000] [id=6112]
+  0x02464800 WatcherThread [stack: 0x0c8b0000,0x0c900000] [id=3452]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 960K, used 594K [0x04480000, 0x04580000, 0x04960000)
+  eden space 896K,  59% used [0x04480000, 0x04504830, 0x04560000)
+  from space 64K, 100% used [0x04560000, 0x04570000, 0x04570000)
+  to   space 64K,   0% used [0x04570000, 0x04570000, 0x04580000)
+ tenured generation   total 4096K, used 3593K [0x04960000, 0x04d60000, 0x08480000)
+   the space 4096K,  87% used [0x04960000, 0x04ce2710, 0x04ce2800, 0x04d60000)
+ compacting perm gen  total 14336K, used 14320K [0x08480000, 0x09280000, 0x0c480000)
+   the space 14336K,  99% used [0x08480000, 0x0927c290, 0x0927c400, 0x09280000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\java.exe
+0x77d00000 - 0x77e80000 	C:\Windows\SysWOW64\ntdll.dll
+0x767c0000 - 0x768c0000 	C:\Windows\syswow64\kernel32.dll
+0x765d0000 - 0x76616000 	C:\Windows\syswow64\KERNELBASE.dll
+0x77560000 - 0x77600000 	C:\Windows\syswow64\ADVAPI32.dll
+0x77600000 - 0x776ac000 	C:\Windows\syswow64\msvcrt.dll
+0x766d0000 - 0x766e9000 	C:\Windows\SysWOW64\sechost.dll
+0x771f0000 - 0x772e0000 	C:\Windows\syswow64\RPCRT4.dll
+0x75870000 - 0x758d0000 	C:\Windows\syswow64\SspiCli.dll
+0x75860000 - 0x7586c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x7c340000 - 0x7c396000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\msvcr71.dll
+0x6d8b0000 - 0x6db3b000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\client\jvm.dll
+0x768c0000 - 0x769c0000 	C:\Windows\syswow64\USER32.dll
+0x76b30000 - 0x76bc0000 	C:\Windows\syswow64\GDI32.dll
+0x766c0000 - 0x766ca000 	C:\Windows\syswow64\LPK.dll
+0x76a90000 - 0x76b2d000 	C:\Windows\syswow64\USP10.dll
+0x73050000 - 0x73082000 	C:\Windows\system32\WINMM.dll
+0x76a00000 - 0x76a60000 	C:\Windows\system32\IMM32.DLL
+0x766f0000 - 0x767bc000 	C:\Windows\syswow64\MSCTF.dll
+0x738c0000 - 0x7390b000 	C:\Windows\system32\apphelp.dll
+0x6d860000 - 0x6d86c000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\verify.dll
+0x6d3e0000 - 0x6d3ff000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\java.dll
+0x6d340000 - 0x6d348000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\hpi.dll
+0x77740000 - 0x77745000 	C:\Windows\syswow64\PSAPI.DLL
+0x6d8a0000 - 0x6d8af000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\zip.dll
+0x6d0b0000 - 0x6d1fa000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\awt.dll
+0x737c0000 - 0x73811000 	C:\Windows\system32\WINSPOOL.DRV
+0x76bc0000 - 0x76d1c000 	C:\Windows\syswow64\ole32.dll
+0x72ad0000 - 0x72c6e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16661_none_420fe3fa2b8113bd\comctl32.dll
+0x772e0000 - 0x77337000 	C:\Windows\syswow64\SHLWAPI.dll
+0x73820000 - 0x73833000 	C:\Windows\system32\DWMAPI.DLL
+0x73840000 - 0x738c0000 	C:\Windows\system32\uxtheme.dll
+0x6d2e0000 - 0x6d334000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\fontmanager.dll
+0x730a0000 - 0x73263000 	C:\Windows\system32\d3d9.dll
+0x74430000 - 0x74439000 	C:\Windows\system32\VERSION.dll
+0x73090000 - 0x73096000 	C:\Windows\system32\d3d8thk.dll
+0x6c040000 - 0x6c9ea000 	C:\Windows\system32\nvd3dum.dll
+0x70760000 - 0x70785000 	C:\Windows\system32\powrprof.dll
+0x773c0000 - 0x7755d000 	C:\Windows\syswow64\SETUPAPI.dll
+0x76a60000 - 0x76a87000 	C:\Windows\syswow64\CFGMGR32.dll
+0x76540000 - 0x765cf000 	C:\Windows\syswow64\OLEAUT32.dll
+0x758d0000 - 0x758e2000 	C:\Windows\syswow64\DEVOBJ.dll
+0x758f0000 - 0x76539000 	C:\Windows\syswow64\shell32.dll
+0x6d6c0000 - 0x6d6d3000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\net.dll
+0x76680000 - 0x766b5000 	C:\Windows\syswow64\WS2_32.dll
+0x769c0000 - 0x769c6000 	C:\Windows\syswow64\NSI.dll
+0x74070000 - 0x740ac000 	C:\Windows\system32\mswsock.dll
+0x74050000 - 0x74056000 	C:\Windows\System32\wship6.dll
+0x6d6e0000 - 0x6d6e9000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\nio.dll
+0x776b0000 - 0x77733000 	C:\Windows\syswow64\CLBCatQ.DLL
+0x727f0000 - 0x72806000 	C:\Windows\system32\CRYPTSP.dll
+0x72600000 - 0x7263b000 	C:\Windows\system32\rsaenh.dll
+0x73910000 - 0x73927000 	C:\Windows\system32\USERENV.dll
+0x74420000 - 0x7442b000 	C:\Windows\system32\profapi.dll
+0x73fb0000 - 0x73fc0000 	C:\Windows\system32\NLAapi.dll
+0x74000000 - 0x74044000 	C:\Windows\system32\DNSAPI.dll
+0x73fa0000 - 0x73fa8000 	C:\Windows\System32\winrnr.dll
+0x73f90000 - 0x73fa0000 	C:\Windows\system32\napinsp.dll
+0x73f70000 - 0x73f82000 	C:\Windows\system32\pnrpnsp.dll
+0x73f60000 - 0x73f6d000 	C:\Windows\system32\wshbth.dll
+0x74060000 - 0x74065000 	C:\Windows\System32\wshtcpip.dll
+0x73fe0000 - 0x73ffc000 	C:\Windows\system32\IPHLPAPI.DLL
+0x73fd0000 - 0x73fd7000 	C:\Windows\system32\WINNSI.DLL
+0x73fc0000 - 0x73fc6000 	C:\Windows\system32\rasadhlp.dll
+0x73c50000 - 0x73c88000 	C:\Windows\System32\fwpuclnt.dll
+0x0fe00000 - 0x0fe12000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\rxtxSerial.dll
+0x10ba0000 - 0x10bc7000 	C:\Windows\system32\crtdll.dll
+0x6d250000 - 0x6d273000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\dcpr.dll
+0x0fe20000 - 0x0fe3b000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\JMyron.dll
+0x10b30000 - 0x10b44000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\myron_ezcam.dll
+0x10bd0000 - 0x10be3000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\DSVL.dll
+0x66900000 - 0x66a77000 	C:\Windows\system32\QUARTZ.dll
+0x7c3a0000 - 0x7c41b000 	C:\Program Files (x86)\Java\jdk1.6.0_16\jre\bin\MSVCP71.dll
+0x6cde0000 - 0x6ce12000 	C:\Windows\SysWOW64\qcap.dll
+0x6ce50000 - 0x6ce71000 	C:\Windows\SysWOW64\MSVFW32.dll
+0x6b080000 - 0x6b100000 	C:\Windows\SysWOW64\qedit.dll
+0x77340000 - 0x773bb000 	C:\Windows\syswow64\COMDLG32.dll
+0x6e780000 - 0x6e910000 	C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7600.16385_none_72fc7cbf861225ca\gdiplus.dll
+0x6d060000 - 0x6d074000 	C:\Windows\SysWOW64\devenum.dll
+0x73790000 - 0x737b1000 	C:\Windows\system32\ntmarta.dll
+0x76620000 - 0x76665000 	C:\Windows\syswow64\WLDAP32.dll
+0x769d0000 - 0x769fd000 	C:\Windows\syswow64\WINTRUST.dll
+0x77750000 - 0x7786c000 	C:\Windows\syswow64\CRYPT32.dll
+0x77cd0000 - 0x77cdc000 	C:\Windows\syswow64\MSASN1.dll
+0x6cf40000 - 0x6cf4b000 	C:\Windows\system32\msdmo.dll
+
+VM Arguments:
+jvm_args: -Xbootclasspath/p:C:\Program Files\NetBeans 7.1\java\modules\ext\jaxws22\api\jaxws-api.jar;C:\Program Files\NetBeans 7.1\ide\modules\ext\jaxb\api\jaxb-api.jar -Dfile.encoding=UTF-8 
+java_command: MyClientPack.Banner
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Rational\common;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\MATLAB\R2010a\runtime\win32;C:\Program Files (x86)\MATLAB\R2010a\bin
+USERNAME=Shree
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7600 
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, ht
+
+Memory: 4k page, physical 4194303k(4194303k free), swap 4194303k(4194303k free)
+
+vm_info: Java HotSpot(TM) Client VM (14.2-b01) for windows-x86 JRE (1.6.0_16-b01), built on Jul 31 2009 11:26:58 by "java_re" with MS VC++ 7.1
+
+time: Thu Jan 22 10:06:45 2015
+elapsed time: 37 seconds
+

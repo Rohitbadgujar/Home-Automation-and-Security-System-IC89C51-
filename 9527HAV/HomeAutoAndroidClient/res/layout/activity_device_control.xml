@@ -1,0 +1,294 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DeviceControlActivity" >
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+      
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="4" >
+
+        <ToggleButton
+            android:id="@+id/toggleButtonDev1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=" 1"
+            android:textColor="@android:color/white"
+            android:textOn="D1\nON"
+            android:textOff="D1\nOFF"
+            android:text="OFF" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonDev2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+                android:textColor="@android:color/white"
+              android:textOn="D2\nON"
+            android:textOff="D2\nOFF"
+            android:layout_weight=" 1" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonDev3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+                android:textColor="@android:color/white"
+              android:textOn="D3\nON"
+            android:textOff="D3\nOFF"
+            android:layout_weight=" 1" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonDev4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+                android:textColor="@android:color/white"
+            android:layout_weight=" 1"
+              android:textOn="D4\nON"
+            android:textOff="D4\nOFF"
+            android:text="ToggleButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4" >
+
+        <ToggleButton
+            android:id="@+id/toggleButtonDev5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=" 1"
+                android:textColor="@android:color/white"
+              android:textOn="D5\nON"
+            android:textOff="D5\nOFF"
+            android:text="OFF" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonDev6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+                android:textColor="@android:color/white"
+              android:textOn="D6\nON"
+            android:textOff="D6\nOFF"
+            android:layout_weight=" 1" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonDev7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+                android:textColor="@android:color/white"
+              android:textOn="D7\nON"
+            android:textOff="D7\nOFF"
+            android:layout_weight=" 1" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonDev8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+                android:textColor="@android:color/white"
+            android:layout_weight=" 1"
+              android:textOn="D8\nON"
+            android:textOff="D8\nOFF"
+            android:text="ToggleButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:text="Sensor 1" />
+
+        <SeekBar
+            android:id="@+id/seekBarTh1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:text="Sensor 2" />
+
+        <SeekBar
+            android:id="@+id/seekBarTh2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:text="Sensor 3" />
+
+        <SeekBar
+            android:id="@+id/seekBarTh3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Sensor 4" />
+
+        <SeekBar
+            android:id="@+id/seekBarTh4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Sensor 5" />
+
+        <SeekBar
+            android:id="@+id/seekBarTh5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Sensor 6" />
+
+        <SeekBar
+            android:id="@+id/seekBarTh6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Sensor 7" />
+
+        <SeekBar
+            android:id="@+id/seekBarTh7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Sensor 8" />
+
+        <SeekBar
+            android:id="@+id/seekBarTh8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+     <Button
+        android:id="@+id/btnReleaseControl"
+     android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+            
+           android:background="@drawable/buttonbackground"
+        android:text="Release Control" />
+  
+       </LinearLayout>
+          </ScrollView>
+     </LinearLayout>
+  
+    
+
